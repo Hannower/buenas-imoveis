@@ -1,23 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta 
-            name="viewport" 
-            content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buenas Imoveis</title>
-    <link 
-        rel="preconnect" 
-        href="https://fonts.googleapis.com">
-    <link 
-        rel="preconnect" 
-        href="https://fonts.gstatic.com" 
-        crossorigin>
-    <link 
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-         rel="stylesheet">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
 
     <header class="banner">
@@ -25,24 +18,80 @@
             <div>
                 <h2>Buenas Imóveis</h2>
                 <ul>
-                    <li><a href="#cadastro">Cadastro</a></li> 
-                    <li><a href="#listagem">Listagem</a></li>  
+                    <li><a href="#cadastro">Cadastro</a></li>
+                    <li><a href="#listagem">Listagem</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <main>
-        <section id="cadastro"></section>
+        <section id="cadastro">
+            <form id="form-cadastro">
+
+                <label for="titulo">Título</label>
+                <input type="text" id="titulo" name="titulo" required>
+
+                <label for="descricao">Descrição</label>
+                <textarea id="descricao" name="descricao" required></textarea>
+
+                <label for="valor">Valor (R$)</label>
+                <input type="number" id="valor" name="valor" min="0" step="0.01">
+
+                <label for="area">Área (m²)</label>
+                <input type="number" id="area" name="area" min="1">
+
+                <label for="quartos">Quartos</label>
+                <input type="number" id="quartos" name="quartos" min="0" max="20">
+
+                <label for="tipo">Tipo</label>
+                <select id="tipo" name="tipo">
+                    <option value="casa">Casa</option>
+                    <option value="apartamento">Apartamento</option>
+                    <option value="terreno">Terreno</option>
+                    <option value="sala">Sala</option>
+                </select>
+
+                <label for="venda_aluguel">Venda / Aluguel</label>
+                <select id="venda_aluguel" name="venda_aluguel">
+                    <option value="venda">Venda</option>
+                    <option value="aluguel">Aluguel</option>
+                </select>
+
+                <label for="finalidade">Finalidade</label>
+                <select id="finalidade" name="finalidade">
+                    <option value="residencial">Residencial</option>
+                    <option value="comercial">Comercial</option>
+                </select>
+
+                <label for="localizacao">Localização</label>
+                <input type="text" id="localizacao" name="localizacao" required>
+
+                <label for="mapa">Link do Mapa</label>
+                <input type="url" id="mapa" name="mapa">
+
+                <label for="fotos">Fotos (URLs)</label>
+                <input type="text" id="fotos" name="fotos">
+
+                <label for="status">Ativo?</label>
+                <input type="checkbox" id="status" name="status" checked>
+
+                <button type="submit">Cadastrar</button>
+                <button type="reset">Limpar</button>
+
+            </form>
+        </section>
+
         <section id="listagem"></section>
     </main>
-    
+
     <footer>
         <p>© 2026 Buenas Imóveis</p>
     </footer>
-    
+
 </body>
 
-<script src="https://unpkg.com/@phosphor-icons/web"></script>  
+<script src="https://unpkg.com/@phosphor-icons/web"></script>
 <script src="./js/app.js"></script>
+
 </html>
