@@ -1,0 +1,55 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variáveis */
+
+:root {
+    --cor-primaria: #6c5fff;
+    --cor-escura: #232323;
+    --cor-branca: #ffffff;
+    --sombra: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --border-radius: 8px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navegacao {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navegacao div {
+    height: auto;
+    background-color: var(--cor-primaria);
+    background: linear-gradient(135deg, var(--cor-primaria), var(--cor-escura));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+div ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+div ul a {
+    color: var(--cor-branca);
+    font-size: 1.7;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+div ul a:hover {
+    cursor: pointer;
+    color: var(--cor-escura);
+}
