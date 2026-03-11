@@ -116,6 +116,90 @@ footer {
     text-align: center;
 }
 
+#listagem {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.card {
+    border: solid 2px var(--cor-escura);
+    width: 20rem;
+    margin: 2rem;
+    text-align: center;
+    background-color: var(--cor-branca);
+    border-radius: var(--border-radius);
+    box-shadow: var(--sombra);
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tag-venda {
+    display: inline-block;
+    background-color: #d4efdf;
+    color: #1e8449;
+    padding: 0.2rem 0.8rem;
+    border-radius: var(--border-radius);
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 0.8rem;
+}
+
+.tag-aluguel {
+    display: inline-block;
+    background-color: #d6eaf8;
+    color: #2471a3;
+    padding: 0.2rem 0.8rem;
+    border-radius: var(--border-radius);
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 0.8rem;
+}
+
+.card-info {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card-info .valor {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--cor-primaria);
+}
+
+.card-botoes {
+    display: flex;
+    gap: 0.5rem;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.card-botoes button {
+    border: none;
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+    transition: 0.5s;
+    padding: 0.6rem 1.5rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.card-botoes button:hover {
+    cursor: pointer;
+    color: var(--cor-escura);
+
+}
+
 @media (max-width: 768px) {
     #form-cadastro {
         grid-template-columns: 1fr;
