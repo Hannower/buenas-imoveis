@@ -44,6 +44,8 @@
             return;
         }
 
+        listagem.innerHTML = '';
+
         imoveis.forEach(imovel => {
 
             if (!imovel.status) return;
@@ -122,7 +124,20 @@
                 window.open(`imovel.html?id=${imovel.id}`);
             })
 
+            btnExcluir.addEventListener('click', function() {
+                const confirmacao = confirm('Deseja excluir este imóvel?');
+
+                if (confirmacao) {
+                    const indice = imoveis.findIndex((i) => i.id === imovel.id);
+                    imoveis.splice(indice, 1);
+                    localStorage.setItem('imoveis', JSON.stringify(imoveis));
+                    renderizar();
+                }
+                
+            })
+            
             });
+
     }
 
     renderizar();
