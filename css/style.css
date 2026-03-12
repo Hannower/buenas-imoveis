@@ -44,7 +44,7 @@ div ul {
 
 div ul a {
     color: var(--cor-branca);
-    font-size: 1.7;
+    font-size: 1rem;
     text-decoration: none;
     transition: 0.5s;
 }
