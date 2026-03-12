@@ -1,12 +1,32 @@
 # Buenas Imóveis 🏠
 
-Sistema web de cadastro e gerenciamento de imóveis desenvolvido como MVP para a cliente fictícia Sra. Helen Bueno.
+Sistema web de cadastro e gerenciamento de imóveis desenvolvido como MVP para a cliente fictícia Sra. Helen Bueno, proprietária de uma imobiliária de pequeno porte em Porto Alegre/RS.
 
-## Tecnologias
+## 📸 Screenshot
+
+![Buenas Imóveis](./assets/screenshot.png)
+
+## 🔗 Deploy
+
+[https://hannower.github.io/buenas-imoveis/](https://hannower.github.io/buenas-imoveis/)
+
+## 💡 Funcionalidades
+
+- CRUD completo de imóveis
+- Persistência de dados com localStorage
+- Tags visuais de Venda e Aluguel
+- Preços formatados em R$
+- Página de detalhe do imóvel
+- Modal de edição
+- Responsivo para mobile e desktop
+
+## 🛠️ Tecnologias
+
 - HTML5
 - CSS3
 - JavaScript
 - LocalStorage
 
-## Desenvolvedor
+## 👨‍💻 Desenvolvedor
+
 Hannower Monteiro
